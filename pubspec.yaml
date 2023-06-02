@@ -1,0 +1,121 @@
+name: foodie_customer
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 3.2.6+12
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core_platform_interface: 4.5.1
+  shared_preferences: ^2.1.0
+  firebase_core: ^1.24.0
+  firebase_crashlytics: ^2.9.0
+  firebase_auth: ^3.11.2
+  cloud_firestore: ^3.5.1
+  image_picker: ^0.8.7+2
+  firebase_storage: ^10.3.11
+  url_launcher: ^6.1.10
+  progress_dialog_null_safe: ^1.0.7
+  intl: ^0.17.0
+  cached_network_image: ^3.2.3
+  uuid: ^3.0.7
+  flutter_local_notifications: ^13.0.0
+  video_thumbnail: ^0.5.3
+  path_provider: ^2.0.11
+  photo_view: ^0.14.0
+  video_player: ^2.6.1
+  flutter_facebook_auth: ^5.0.6
+  http: ^0.13.5
+  smooth_page_indicator: ^1.0.1
+  firebase_messaging: ^13.1.0
+  intl_phone_number_input: ^0.7.1
+  pin_code_fields: ^7.4.0
+  permission_handler: ^10.2.0
+  easy_localization: ^3.0.1
+  mime: ^1.0.4
+  moor_flutter:
+  path: ^1.8.2
+  font_awesome_flutter: ^10.4.0
+  flutter_polyline_points: ^1.0.0
+  percent_indicator: ^4.2.3
+  lottie: ^2.3.2
+  flutter_native_image: ^0.0.6+1
+  video_compress: ^3.1.2
+  flutter_sound: ^9.2.13
+  the_apple_sign_in:
+  cupertino_icons: ^1.0.5
+  dotted_border: ^2.0.0+3
+  flutter_braintree: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  place_picker: ^0.10.0
+  google_maps_flutter: ^2.2.5
+  geolocator: ^9.0.2
+  geocoding: ^2.0.5
+  share: ^2.0.4
+  flutter_staggered_grid_view: ^0.6.2
+  clipboard: ^0.1.3
+  geoflutterfire: ^3.0.3
+  razorpay_flutter: ^1.3.4
+  location: ^4.4.0
+  flutter_stripe: ^9.0.0+1
+  paytm_allinonesdk: ^1.2.1
+  flutterwave_standard: ^1.0.7
+  bluetooth_thermal_printer: ^0.0.6
+  esc_pos_utils: ^1.1.0
+  flutter_facebook_keyhash: ^0.0.4
+  flutter_qr_bar_scanner: ^3.0.2
+  mercadopago_sdk: ^1.3.0
+  flutter_widget_from_html: ^0.10.0
+  scroll_to_index: ^3.0.1
+  rect_getter: ^1.1.0
+  story_view: ^0.14.0
+  optimized_cached_image: ^3.0.1
+  paginate_firestore: ^1.0.3+1
+  flutter_share: ^2.0.0
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.11.0
+
+dependency_overrides:
+  webview_flutter: ^4.2.1
+
+
+flutter_icons:
+  android: false
+  ios: true
+  image_path: 'assets/images/ic_launcher-playstore.png'
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/translations/
+    - assets/fonts/
+    - assets/flags/
+    - assets/json file/
+    - assets/
+
+  fonts:
+    - family: Poppinsb
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+
+    - family: Poppinsl
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+
+    - family: Poppinsm
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+
+    - family: Poppinsr
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+
+    - family: Poppinssb
+      fonts:
+        - asset: assets/fonts/Poppins-SemiBold.ttf

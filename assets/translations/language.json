@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "language": "English",
+      "icon": "assets/flags/ic_uk.png",
+      "languageCode": "en"
+    },
+    {
+      "language": "Arebic",
+      "icon": "assets/flags/ic_uae.png",
+      "languageCode": "ar"
+    }
+  ]
+}
