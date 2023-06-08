@@ -82,12 +82,11 @@ dev_dependencies:
 
 dependency_overrides:
   webview_flutter: ^4.2.1
-
-
+  
 flutter_icons:
-  android: false
+  android: true
   ios: true
-  image_path: 'assets/images/ic_launcher-playstore.png'
+  image_path: "assets/images/lostacos_icon.png"
 
 flutter:
   uses-material-design: true

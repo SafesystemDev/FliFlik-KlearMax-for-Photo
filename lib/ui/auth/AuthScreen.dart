@@ -10,16 +10,21 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: isDarkMode(context) ? Color(DARK_VIEWBG_COLOR) : Colors.white,
+      backgroundColor:
+          isDarkMode(context) ? Color(DARK_VIEWBG_COLOR) : Colors.white,
       body: Stack(children: [
         Align(
           alignment: Alignment.topRight,
           child: Padding(
-            padding: const EdgeInsets.only(right: 20.0, left: 20.0, top: 40, bottom: 20),
+            padding: const EdgeInsets.only(
+                right: 20.0, left: 20.0, top: 40, bottom: 20),
             child: TextButton(
               child: Text(
                 'Skip',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(COLOR_PRIMARY)),
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(COLOR_PRIMARY)),
               ).tr(),
               onPressed: () {
                 pushAndRemoveUntil(
@@ -51,19 +56,24 @@ class AuthScreen extends StatelessWidget {
           children: <Widget>[
             Center(
               child: Image.asset(
-                'assets/images/app_logo.png',
-                color: Color(COLOR_PRIMARY),
+                'assets/images/lostacos_icon.png',
+                // color: Color(COLOR_PRIMARY),
                 fit: BoxFit.cover,
                 width: 150,
                 height: 150,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 16, top: 32, right: 16, bottom: 8),
+              padding: const EdgeInsets.only(
+                  left: 16, top: 32, right: 16, bottom: 8),
               child: Text(
-                'Welcome to FOODIES',
+                'Welcome to ${"Los Tacos".toUpperCase()}',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Color(COLOR_PRIMARY), fontSize: 24.0, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    // color: Color(COLOR_PRIMARY),
+                    color: Colors.black,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold),
               ).tr(),
             ),
             Padding(
@@ -91,7 +101,10 @@ class AuthScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Log In',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   ).tr(),
                   onPressed: () {
                     push(context, LoginScreen());
@@ -100,13 +113,17 @@ class AuthScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 40.0, left: 40.0, top: 20, bottom: 20),
+              padding: const EdgeInsets.only(
+                  right: 40.0, left: 40.0, top: 20, bottom: 20),
               child: ConstrainedBox(
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: TextButton(
                   child: Text(
                     'Sign Up',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(COLOR_PRIMARY)),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(COLOR_PRIMARY)),
                   ).tr(),
                   onPressed: () {
                     push(context, SignUpScreen());

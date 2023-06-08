@@ -44,7 +44,8 @@ const ORDERS_TABLE = 'booked_table';
 const SECOND_MILLIS = 1000;
 const MINUTE_MILLIS = 60 * SECOND_MILLIS;
 const HOUR_MILLIS = 60 * MINUTE_MILLIS;
-const SERVER_KEY = 'AAAAQBUQI6c:APA91bH8psxznjF63YiAhtZxfhSzui5YmG_Y6V7CTc9F50q9uezlt5xpd0HQ7QH0Cw9bQBvmbE9AMSpO0lwttKeJyQTiGE8tR5XhHcMuJWnNeqO7md2j0v83fyCaU_MuUCxVsFY4RVUe';
+const SERVER_KEY =
+    'AAAAQBUQI6c:APA91bH8psxznjF63YiAhtZxfhSzui5YmG_Y6V7CTc9F50q9uezlt5xpd0HQ7QH0Cw9bQBvmbE9AMSpO0lwttKeJyQTiGE8tR5XhHcMuJWnNeqO7md2j0v83fyCaU_MuUCxVsFY4RVUe';
 String GOOGLE_API_KEY = '';
 
 const ORDER_STATUS_PLACED = 'Order Placed';
@@ -89,7 +90,8 @@ String appVersion = '';
 
 String referralAmount = "0.0";
 
-String placeholderImage = 'https://firebasestorage.googleapis.com/v0/b/foodies-3c1d9.appspot.com/o/images%2Fplace_holder.png?alt=media&token=f391844e-0f04-44ed-bf37-e6a1c7d91020';
+String placeholderImage =
+    'https://firebasestorage.googleapis.com/v0/b/foodies-6fe08.appspot.com/o/logo%20los%20tacos%2056.png?alt=media&token=bf5e6741-ab58-467c-9645-292443c71e0d';
 
 String getReferralCode() {
   var rng = new Random();
@@ -126,7 +128,8 @@ double getTaxValue(TaxModel? taxModel, double amount) {
 Uri createCoordinatesUrl(double latitude, double longitude, [String? label]) {
   var uri;
   if (kIsWeb) {
-    uri = Uri.https('www.google.com', '/maps/search/', {'api': '1', 'query': '$latitude,$longitude'});
+    uri = Uri.https('www.google.com', '/maps/search/',
+        {'api': '1', 'query': '$latitude,$longitude'});
   } else if (Platform.isAndroid) {
     var query = '$latitude,$longitude';
     if (label != null) query += '($label)';
@@ -136,14 +139,16 @@ Uri createCoordinatesUrl(double latitude, double longitude, [String? label]) {
     if (label != null) params['q'] = label;
     uri = Uri.https('maps.apple.com', '/', params);
   } else {
-    uri = Uri.https('www.google.com', '/maps/search/', {'api': '1', 'query': '$latitude,$longitude'});
+    uri = Uri.https('www.google.com', '/maps/search/',
+        {'api': '1', 'query': '$latitude,$longitude'});
   }
 
   return uri;
 }
 
 String getKm(Position pos1, Position pos2) {
-  double distanceInMeters = Geolocator.distanceBetween(pos1.latitude, pos1.longitude, pos2.latitude, pos2.longitude);
+  double distanceInMeters = Geolocator.distanceBetween(
+      pos1.latitude, pos1.longitude, pos2.latitude, pos2.longitude);
   double kilometer = distanceInMeters / 1000;
   debugPrint("KiloMeter$kilometer");
   return kilometer.toStringAsFixed(2).toString();
